@@ -141,7 +141,6 @@ namespace joystickbit {
      */
     //% blockId=Gamepad_Press block="Gamepad_Press bottons whether %button pressed?" group="双摇杆手柄"
     //% weight=74
-    //% subcategory="基础输入模块"
     //% inlineInputMode=inline
     export function Gamepad_Press(button: barb_fitting): boolean {
         if(Get_Button_Status(button) != NONE_PRESS && Get_Button_Status (button) != 0xff){
@@ -155,7 +154,6 @@ namespace joystickbit {
     */
    //% blockId=Gamepad_Release block="Gamepad_Release bottons whether %button pressed?" group="双摇杆手柄"
    //% weight=74
-   //% subcategory="基础输入模块"
    //% inlineInputMode=inline
    export function Gamepad_Release(button: barb_fitting): boolean {
        if(Get_Button_Status(button) == NONE_PRESS){
@@ -169,7 +167,6 @@ namespace joystickbit {
     */
    //% blockId=Gamepad_Status block="Gamepad_Status %button whether %status state" group="双摇杆手柄"
    //% weight=74
-   //% subcategory="基础输入模块"
    //% inlineInputMode=inline
    export function Gamepad_Status(button: barb_fitting , status: key_status): boolean{
        if(Get_Button_Status(button) == status){
@@ -184,7 +181,6 @@ namespace joystickbit {
     */
    //% blockId=Gamepad_shock block="Gamepad_shock Start of %freq vibration "  group="双摇杆手柄"
    //% weight=74
-   //% subcategory="基础输入模块"
    //% inlineInputMode=inline
     export function Gamepad_shock( shock: number): void {
         let a = AnalogPin.P1;
@@ -198,7 +194,6 @@ namespace joystickbit {
     */
    //% blockId=Gamepad_Wiggly block="Gamepad_Wiggly gain %rock rocker %axial price" group="双摇杆手柄"
    //% weight=74
-   //% subcategory="基础输入模块"
    //% inlineInputMode=inline
    export function Gamepad_Wiggly(rock: Wiggly , axial: Shaft){
        let val = 0;
