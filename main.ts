@@ -1,3 +1,52 @@
+enum barb_fitting {
+    //% block="LEFT"
+    BUTOON_LEFT = 0,
+    //% block="RIGHT" 
+    BUTOON_RIGHT = 1,
+    //% block="LEFTA"
+    JOYSTICK_BUTTON_LEFT = 2,
+    //% block="RIGHTA" 
+    JOYSTICK_BUTTON_RIGHT = 3,
+}
+
+enum key_status {
+    //% block="DOWN"
+    PRESS_DOWN = 0,   //按下
+    //% block="UP"
+    PRESS_UP = 1,    //释放
+    // //% block="CLICK1"
+    // SINGLE_CLICK = 3,     //单击
+    // //% block="CLICK2"
+    // DOUBLE_CLICK = 4,    //双击
+    // //% block="HOLD"
+    // LONG_PRESS_HOLD = 6,    //长按
+    // //% block="PRESS"
+    // NONE_PRESS = 8,      //未按
+}
+
+enum Shaft{
+    //% block="X"
+    X_Shaft = 0,
+    //% block="Y"
+    Y_Shaft = 1,
+}
+
+enum Wiggly{
+    //% block = "LEFT"
+    left_wi = 0,
+    //% block = "RIGHT"
+    right_wi = 1,
+}
+
+enum ABtub{
+    //% block = "A"
+    Aval = 17,
+    //% block = "B"
+    Bval = 26,
+}
+
+
+
 //% color="#FFA500" weight=10 block="Joystick:bit"
 namespace joystickbit {
    
