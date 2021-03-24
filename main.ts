@@ -1,4 +1,4 @@
-//% color="#FFA500" weight=10 icon="\uf2c9" block="Joystick:bit"
+//% color="#FFA500" weight=10 block="Joystick:bit"
 namespace joystickbit {
    
     function i2cwrite(addr: number, reg: number, value: number) {
