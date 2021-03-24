@@ -1,0 +1,17 @@
+{
+    "name": "joystick:bit",
+    "version": "1.0.0",
+    "description": "摇杆手柄",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "main.ts",
+        "EMRGBLight.ts",
+		"_locales/zh/sensors-strings.json"
+		
+    ],
+    "public": true
+}
