@@ -38,18 +38,40 @@ enum Wiggly{
     right_wi = 1,
 }
 
-enum ABtub{
-    //% block = "A"
-    Aval = 17,
-    //% block = "B"
-    Bval = 26,
-}
 
+//% color="#FFA500" weight=10 icon="\uf2c9" block="Joystick:bit"
+namespace joystick {
+    
 
+    
+    let i2cAddr: number
+    let BK: number
+    let RS: number
+    function setreg(d: number) {
+        pins.i2cWriteNumber(i2cAddr, d, NumberFormat.Int8LE)
+        basic.pause(1)
+    }
 
-//% color="#FFA500" weight=10 block="Joystick:bit"
-namespace joystickbit {
-   
+    function set(d: number) {
+        d = d & 0xF0
+        d = d + BK + RS
+        setreg(d)
+        setreg(d + 4)
+        setreg(d)
+    }
+
+    function lcdcmd(d: number) {
+        RS = 0
+        set(d)
+        set(d << 4)
+    }
+
+    function lcddat(d: number) {
+        RS = 1
+        set(d)
+        set(d << 4)
+    }
+
     function i2cwrite(addr: number, reg: number, value: number) {
         let buf = pins.createBuffer(2)
         buf[0] = reg
@@ -82,8 +104,6 @@ namespace joystickbit {
         let val = pins.i2cReadNumber(addr, NumberFormat.UInt8BE);
         return val;
     }
-
-    
 
     function stringToBytes (str : string) {  
 
@@ -141,6 +161,7 @@ namespace joystickbit {
      */
     //% blockId=Gamepad_Press block="Gamepad_Press bottons whether %button pressed?" group="双摇杆手柄"
     //% weight=74
+    //% subcategory="双摇杆手柄"
     //% inlineInputMode=inline
     export function Gamepad_Press(button: barb_fitting): boolean {
         if(Get_Button_Status(button) != NONE_PRESS && Get_Button_Status (button) != 0xff){
@@ -154,6 +175,7 @@ namespace joystickbit {
     */
    //% blockId=Gamepad_Release block="Gamepad_Release bottons whether %button pressed?" group="双摇杆手柄"
    //% weight=74
+   //% subcategory="双摇杆手柄"
    //% inlineInputMode=inline
    export function Gamepad_Release(button: barb_fitting): boolean {
        if(Get_Button_Status(button) == NONE_PRESS){
@@ -167,6 +189,7 @@ namespace joystickbit {
     */
    //% blockId=Gamepad_Status block="Gamepad_Status %button whether %status state" group="双摇杆手柄"
    //% weight=74
+   //% subcategory="双摇杆手柄"
    //% inlineInputMode=inline
    export function Gamepad_Status(button: barb_fitting , status: key_status): boolean{
        if(Get_Button_Status(button) == status){
@@ -181,6 +204,7 @@ namespace joystickbit {
     */
    //% blockId=Gamepad_shock block="Gamepad_shock Start of %freq vibration "  group="双摇杆手柄"
    //% weight=74
+   //% subcategory="双摇杆手柄"
    //% inlineInputMode=inline
     export function Gamepad_shock( shock: number): void {
         let a = AnalogPin.P1;
@@ -194,6 +218,7 @@ namespace joystickbit {
     */
    //% blockId=Gamepad_Wiggly block="Gamepad_Wiggly gain %rock rocker %axial price" group="双摇杆手柄"
    //% weight=74
+   //% subcategory="双摇杆手柄"
    //% inlineInputMode=inline
    export function Gamepad_Wiggly(rock: Wiggly , axial: Shaft){
        let val = 0;
