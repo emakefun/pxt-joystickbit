@@ -65,11 +65,11 @@ joystick:bit为   [深圳市易创空间科技有限公司](www.emakefun.com)出
 
 - 游戏手柄震动频率模块可以调试震动电机的震动频率
 
-   ![image](imgs/24.jpg)
+   ![image](imgs/31.jpg)
 
 - 配合按键使用: 当你按下L键时，震动电机开始工作，频率为137HZ。当你释放按键L时，震动电机停止工作。
 
-   ![image](imgs/24.jpg)
+   ![image](imgs/32.jpg)
 
 
 ### python支持
