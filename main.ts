@@ -202,7 +202,8 @@ namespace joystick {
     /**
     * 双摇杆手柄
     */
-   //% blockId=Gamepad_shock block="Gamepad_shock Start of %freq vibration "  group="双摇杆手柄"
+   //% blockId=Gamepad_shock block="Gamepad_shock Start of %shock vibration "  group="双摇杆手柄"
+   //% shock.min=0 shock.max=1000
    //% weight=74
    //% subcategory="双摇杆手柄"
    //% inlineInputMode=inline
