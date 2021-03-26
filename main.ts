@@ -213,6 +213,14 @@ namespace joystick {
     }
 
 
+    //% blockId=actuator_buzzer1 block="Vibration frequency of the on-board buzzer on the handle: %freq "   group="双摇杆手柄"
+    //% freq.min=0 freq.max=1000
+    //% weight=74
+    //% subcategory="双摇杆手柄"
+    export function actuator_buzzer1( freq: number): void {
+        let a = AnalogPin.P0;
+        pins.analogWritePin(a, freq)
+    }
 
     /**
     * 双摇杆手柄
