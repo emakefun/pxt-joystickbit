@@ -1,7 +1,7 @@
 {
-    "name": "sensors",
+    "name": "joystick",
     "version": "1.0.0",
-    "description": "PH2.0传感器",
+    "description": "双摇杆游戏手柄",
     "license": "MIT",
     "dependencies": {
         "core": "*"
