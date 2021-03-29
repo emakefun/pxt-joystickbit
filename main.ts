@@ -42,8 +42,6 @@ enum Wiggly{
 //% color="#FFA500" weight=10 icon="\uf2c9" block="Joystick:bit"
 namespace joystick {
     
-
-    
     let i2cAddr: number
     let BK: number
     let RS: number
