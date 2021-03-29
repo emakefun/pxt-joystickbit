@@ -1,91 +1,90 @@
 # joystick:bit
-[English](README.md) 中文版
+English[ 中文版](README_zh.md)
 
-joystick:bit为   [深圳市易创空间科技有限公司](www.emakefun.com)出品的针对micro:bit开发的无线可编程手柄，支持micro:bit V1 V2
+Joystick: Bit is a wireless programmable controller developed for Micro: Bit, which is produced by [Shenzhen E-Innovation Space Technology Co., Ltd.](www.emakefun.com) and supports Micro: Bit V1 and V2
 
-![image](imgs/joystickbit.jpg)
+![image](imgs/61.jpg)
 
-## 特点
+## characteristic
 
-- 左右双摇杆
+- Left and right rockers
 
-- 手柄扩展microbit A，B按键
+- The joypad extends the Microbit A, B buttons
 
-- 左右可编程独立按键
+- Left and right programmable independent keys
 
-- 板子蜂鸣器和震动电机
+- Board buzzer and vibration motor
 
-- 2节7号电池供电
+- Powered by 2 # 7 batteries
 
-- 1个PH2.0-4Pin i2c接口 
+- 1 PH2.0-4PIN I2C interface
 
   
-
-## 图像化编程块说明
-   - 《游戏手柄摇杆获取 左/右侧 x/y轴 的值》:该模块用于获取手柄左或者右摇杆x轴或者y轴方向的坐标值，其获取的值为数值类型，其值可以通过‘显示数字’模块显示在micro:bit板上
-   - 《游戏手柄震动频率 （）》 :该模块用于调试游戏手柄上震动电机的震动频率，其值为0时震动电机停止震动。
-   - 《按键 L/R/左摇杆按键/右摇杆按键 是否是 按下/释放 状态》 :该模块用于判断游戏手柄左右按键和摇杆中心按键是否按下或者释放，是返回ture,否返回false，作用于判断模块（如果...则执行...）
-   - 《游戏手柄按键 L/R/左摇杆按键/右摇杆按键 是否被按下》 :该模块用于判断手柄上按钮是否按下，是返回ture,否返回false。
-   - 《游戏手柄按键 L/R/左摇杆按键/右摇杆按键 是否被释放》 :该模块用于判断手柄按键是否未按住，是返回ture,否返回false。
-
-   ![image](imgs/1.jpg)
-
-   - 下面的组合模块的含义:
-     - 模块代码成功下载到micro:bit上后，micro:bit的LED显示屏显示数字爱心，之后持续获取并显示左侧摇杆的x轴坐标。当按下L键时，振动电机以500HZ的频率开始震动，当释放按钮L时，振动电机停止震动。当按下R键时，板载蜂鸣器以500HZ的频率开始工作，当释放按钮R时，板载蜂鸣器停止工作。
-
-   ![image](imgs/000.jpg)
+  
   
 
-### 摇杆图形化块
+## Graphic programming block description
 
-- 获取游戏手柄摇杆x/y轴值（获取左/右侧x/y轴的值并将其数值通过LED显示屏显示出来）
+   - "GamePad Joystick to get left/right X/Y axis values" : This module is used to get the coordinate values of the left or right joystick in the X or Y axis direction. The values obtained are numeric types and can be displayed on the Micro: BIT board through the 'Show Number' module
+   - "Game gamepad vibration frequency ()" : This module is used to debug the vibration frequency of the vibration motor on the game gamepad. When its value is 0, the vibration motor stops vibrating.
+   - "Key L/R/ left joystick key/right joystick key is pressed/released" : This module is used to determine whether the left and right joystick key and the joystick center key are pressed or released, and it returns true or false, which is used to determine the module (if...Then execute...)
+   - "Key L/R/ left joystick key/right joystick key is pressed/released" : This module is used to determine whether the left and right joystick key and the joystick center key are pressed or released, and it returns true or false, which is used to determine the module (if...Then execute...)
+   - "Gamepad Button L/R/ Left Joystick Button/Right Joystick Button Released" : This module is used to determine if the joystick button is not held down, if it returns true or if it returns false.
 
-   ![image](imgs/11.jpg)
+   ![image](imgs/66.jpg)
 
-   ![image](imgs/12.jpg)
+   - The following is the meaning of the composite module
+     
+     :
+     
+     - After the module code is successfully downloaded to Micro: Bit, the LED display of Micro: Bit displays the digital heart, and then continuously gets and displays the X axis coordinate of the left rocker.When the L key is pressed, the vibration motor starts to vibrate at a frequency of 500Hz and stops vibrating when the release button L.When the R button is pressed, the on-board buzzer starts working at a frequency of 500Hz and stops working when the R button is released.
 
+   ![image](imgs/60.jpg)
 
-### 独立按键编程图形块
+###  Joystick graphic block
 
-- 按键 L/R/左摇杆按键/右摇杆按键 是否是 按下/释放 状态
-- 下面模块是对按键状态进行一个判断：当你按了按键L，则显示字符串"Hello"
+- Get the X/Y value of the gamepad joystick (get the left/right X/Y value and display it on the LED display)
 
-   ![image](imgs/21.jpg)
+   ![image](imgs/56.jpg)
 
-   ![image](imgs/22.jpg)
+   ![image](imgs/69.jpg)
 
-- 同理，下面两个模块也是对按键的按下或者未按进行一个判断，为真则显示字符串"Hello"
+### Independent key programming graphics block
 
-   ![image](imgs/23.jpg)
+- Whether the L/R/ left rocker key/right rocker key is pressed/released
+- When you press the L key, the string "Hello" is displayed.
 
-   ![image](imgs/24.jpg)
+   ![image](imgs/56.jpg)
 
+   ![image](imgs/52.jpg)
 
-### 震动电机编程图形块
+- Similarly, the following two modules determine whether a key was pressed or not, and if true, the string "Hello" is displayed.
 
-- 游戏手柄震动频率模块可以调试震动电机的震动频率
+   ![image](imgs/58.jpg)
 
-   ![image](imgs/31.jpg)
+   ![image](imgs/54.jpg)
 
-- 配合按键使用: 当你按下L键时，震动电机开始工作，频率为137HZ。当你释放按键L时，震动电机停止工作。
+### Vibration motor programming graphics block
 
-   ![image](imgs/32.jpg)
+- Game gamepad vibration frequency module can debug the vibration frequency of vibration motor
 
+   ![image](imgs/57.jpg)
 
-### 板载蜂鸣器编程图形快
+- Use with the key: when you press the L key, the vibration motor starts to work, the frequency is 137Hz.When you release the key L, the vibration motor stops working.
 
-- 游戏手柄板载蜂鸣器振动频率模块可以调试板载蜂鸣器的振动频率
+   ![image](imgs/59.jpg)
 
-   ![image](imgs/41.jpg)
+###  On board buzzer programming graphics fast
 
-- 配合按键使用: 当你按下L键时，板载蜂鸣器开始工作，频率为516HZ，当你释放按键L时，板载蜂鸣器频率为0停止工作。
+- The vibration frequency module of the on-board buzzer on the game controller can debug the vibration frequency of the on-board buzzer
 
-  ![image](imgs/43.jpg)
+   ![image](imgs/53.jpg)
 
+- When you press the L key, the onboard buzzer will start working with a frequency of 516Hz. When you release the L key, the onboard buzzer will stop working with a frequency of 0.
 
-### python支持
+  ![image](imgs/55.jpg)
 
+# # # python support
 
-
-## 开源许可
+## Open source license
 MIT
