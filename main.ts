@@ -32,9 +32,9 @@ enum Shaft{
 }
 
 enum Wiggly{
-    //% block = "LEFT"
+    //% block="LEFT"
     left_wi = 0,
-    //% block = "RIGHT"
+    //% block="RIGHT"
     right_wi = 1,
 }
 
@@ -171,7 +171,7 @@ namespace joystick {
     /** 
      * 双摇杆手柄
     */
-   //% blockId=Gamepad_Release block="Gamepad_Release bottons whether %button pressed?" group="双摇杆手柄"
+   //% blockId=Gamepad_Release block="Gamepad_Release bottons whether %button freed?" group="双摇杆手柄"
    //% weight=74
    //% subcategory="双摇杆手柄"
    //% inlineInputMode=inline
