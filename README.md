@@ -84,7 +84,7 @@ Joystick: Bit is a wireless programmable controller developed for Micro: Bit, wh
 
   ![image](imgs/55.jpg)
 
-# # # python support
+### python support
 
 ## Open source license
 MIT

@@ -3,7 +3,7 @@
 
 joystick:bit为   [深圳市易创空间科技有限公司](www.emakefun.com)出品的针对micro:bit开发的无线可编程手柄，支持micro:bit V1 V2
 
-![image](C:\Users\Administrator\Desktop\joystickbit.jpg)
+![image](imgs/joystickbit.jpg)
 
 ## 特点
 
