@@ -1,8 +1,8 @@
 enum barb_fitting {
     //% block="LEFT"
-    BUTOON_LEFT = 0,
+    BUTOON_LEFT_L = 0,
     //% block="RIGHT" 
-    BUTOON_RIGHT = 1,
+    BUTOON_RIGHT_R = 1,
     //% block="LEFTA"
     JOYSTICK_BUTTON_LEFT = 2,
     //% block="RIGHTA" 
