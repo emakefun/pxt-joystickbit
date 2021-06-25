@@ -1,7 +1,7 @@
 {
     "name": "joystick",
     "version": "1.0.0",
-    "description": "双摇杆游戏手柄",
+    "description": "Joystick:bit",
     "license": "MIT",
     "dependencies": {
         "core": "*"
