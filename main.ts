@@ -1,8 +1,8 @@
 enum barb_fitting {
     //% block="LEFT"
-    BUTOON_LEFT_L = 0,
+    JOYSTICK_BUTOON_LEFT_L = 0,
     //% block="RIGHT" 
-    BUTOON_RIGHT_R = 1,
+    JOYSTICK_BUTOON_RIGHT_R = 1,
     //% block="LEFTA"
     JOYSTICK_BUTTON_LEFT = 2,
     //% block="RIGHTA" 
@@ -11,9 +11,9 @@ enum barb_fitting {
 
 enum key_status {
     //% block="DOWN"
-    PRESS_DOWN = 0,   //按下
+    JOYSTICK_PRESS_DOWN = 0,   //按下
     //% block="UP"
-    PRESS_UP = 1,    //释放
+    JOYSTICK_PRESS_UP = 1,    //释放
     // //% block="CLICK1"
     // SINGLE_CLICK = 3,     //单击
     // //% block="CLICK2"
@@ -26,16 +26,16 @@ enum key_status {
 
 enum Shaft{
     //% block="X"
-    X_Shaft = 0,
+    JOYSTICK_X_Shaft = 0,
     //% block="Y"
-    Y_Shaft = 1,
+    JOYSTICK_Y_Shaft = 1,
 }
 
 enum Wiggly{
     //% block="LEFT"
-    left_wi = 0,
+    JOYSTICK_left_wi = 0,
     //% block="RIGHT"
-    right_wi = 1,
+    JOYSTICK_right_wi = 1,
 }
 
 
@@ -245,3 +245,4 @@ namespace joystick {
        return val;
    }
 }
+
