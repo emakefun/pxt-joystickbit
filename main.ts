@@ -1,10 +1,10 @@
 enum barb_fitting {
     //% block="LEFT"
-    JOYSTICK_BUTOON_LEFT_L = 0,
+    JOYSTICK_BUTOON_LEFT_L = 2,
     //% block="RIGHT" 
     JOYSTICK_BUTOON_RIGHT_R = 1,
     //% block="JOYSTICK BUTTON LEFT"
-    JOYSTICK_BUTTON_LEFT = 2,
+    JOYSTICK_BUTTON_LEFT = 4,
     //% block="JOYSTICK BUTTON RIGHT" 
     JOYSTICK_BUTTON_RIGHT = 3,
 }
@@ -133,7 +133,7 @@ namespace joystick {
     let JOYSTICK_RIGHT_Y_REG = 0x13;
 
 
-    let BUTOON_LEFT_REG = 0x24;
+    let BUTOON_LEFT_REG = 0x22;
     let BUTOON_RIGHT_REG = 0x23;
     let JOYSTICK_BUTTON_RIGHT = 0x21;
     let JOYSTICK_BUTTON_LEFT = 0x20;
@@ -141,14 +141,14 @@ namespace joystick {
 
     function Get_Button_Status (button : number){
         switch(button) {
-            case 0: 
-                return i2cread(JOYSTICK_I2C_ADDR,BUTOON_LEFT_REG);
             case 1: 
                 return i2cread(JOYSTICK_I2C_ADDR,BUTOON_RIGHT_REG);
             case 2: 
-                return i2cread(JOYSTICK_I2C_ADDR,JOYSTICK_BUTTON_LEFT);
+                return i2cread(JOYSTICK_I2C_ADDR, BUTOON_LEFT_REG);
             case 3: 
-                return i2cread(JOYSTICK_I2C_ADDR,JOYSTICK_BUTTON_RIGHT);
+                return i2cread(JOYSTICK_I2C_ADDR,BUTOON_RIGHT_REG);
+			case 4: 
+				return i2cread(JOYSTICK_I2C_ADDR,JOYSTICK_BUTTON_LEFT);
             default:
                 return 0xff;
         }
