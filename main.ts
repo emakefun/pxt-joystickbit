@@ -146,7 +146,7 @@ namespace joystick {
             case 2: 
                 return i2cread(JOYSTICK_I2C_ADDR, BUTOON_LEFT_REG);
             case 3: 
-                return i2cread(JOYSTICK_I2C_ADDR,BUTOON_RIGHT_REG);
+                return i2cread(JOYSTICK_I2C_ADDR,JOYSTICK_BUTTON_RIGHT);
 			case 4: 
 				return i2cread(JOYSTICK_I2C_ADDR,JOYSTICK_BUTTON_LEFT);
             default:
