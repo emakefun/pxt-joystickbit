@@ -158,7 +158,7 @@ namespace joystick {
      * 双摇杆手柄
      */
     //% blockId=Gamepad_Press block="Gamepad_Press bottons whether %button pressed?" group="双摇杆手柄"
-    //% weight=74
+    //% weight=72
     //% subcategory="双摇杆手柄"
     //% inlineInputMode=inline
     export function Gamepad_Press(button: barb_fitting): boolean {
@@ -172,7 +172,7 @@ namespace joystick {
      * 双摇杆手柄
     */
    //% blockId=Gamepad_Release block="Gamepad_Release bottons whether %button freed?" group="双摇杆手柄"
-   //% weight=74
+   //% weight=73
    //% subcategory="双摇杆手柄"
    //% inlineInputMode=inline
    export function Gamepad_Release(button: barb_fitting): boolean {
