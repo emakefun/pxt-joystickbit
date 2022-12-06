@@ -5,9 +5,8 @@
     "barb_fitting.JOYSTICK_BUTOON_RIGHT|block": "R",
     "barb_fitting.JOYSTICK_BUTTON_LEFT|block": "左摇杆按键",
     "barb_fitting.JOYSTICK_BUTTON_RIGHT|block": "右摇杆按键",
-    "joystick.Gamepad_button|block": "游戏手柄按键 %BUTS 是否被按下",
-    "joystick.Gamepad_shock|block": "游戏手柄震动频率 %shock ",
-    "joystick.actuator_buzzer1|block": "游戏手柄板载蜂鸣器振动频率 %shock ",
+    "joystick.Gamepad_shock|block": "游戏手柄震动电机速度 %shock ",
+    "joystick.actuator_buzzer1|block": "游戏手柄板载蜂鸣器振动频率(HZ) %shock ",
     
     
     "key_status.JOYSTICK_PRESS_DOWN|block": "按下",
@@ -16,11 +15,9 @@
     "key_status.DOUBLE_CLICK|block": "双击",
     "key_status.LONG_PRESS_HOLD|block": "长按",
     "key_status.NONE_PRESS|block": "未按",
-    "joystick.Gamepad_Release|block": "游戏手柄按键 %button 是否被释放？",
-    "joystick.Gamepad_Shaft|block": "游戏手柄获取 %axial 的值",
     "Shaft.JOYSTICK_X_Shaft|block": "X轴",
     "Shaft.JOYSTICK_Y_Shaft|block": "Y轴",
-    "joystick.Gamepad_Status|block": "按键 %button 是否是 %status 状态",
+    "joystick.Gamepad_Status|block": "当按钮 %button 被 %status 时",
     "joystick.Gamepad_Wiggly|block": "游戏手柄摇杆获取 %rock %axial 的值",
     "Wiggly.JOYSTICK_left_wi|block": "左侧",
     "Wiggly.JOYSTICK_right_wi|block": "右侧"

@@ -154,34 +154,6 @@ namespace joystick {
         }
     }
 
-    /**
-     * 双摇杆手柄
-     */
-    //% blockId=Gamepad_Press block="Gamepad_Press bottons whether %button pressed?" group="双摇杆手柄"
-    //% weight=72
-    //% subcategory="双摇杆手柄"
-    //% inlineInputMode=inline
-    export function Gamepad_Press(button: barb_fitting): boolean {
-        if(Get_Button_Status(button) != NONE_PRESS && Get_Button_Status (button) != 0xff){
-            return true;
-        }
-        return false;
-    }
-
-    /** 
-     * 双摇杆手柄
-    */
-   //% blockId=Gamepad_Release block="Gamepad_Release bottons whether %button freed?" group="双摇杆手柄"
-   //% weight=73
-   //% subcategory="双摇杆手柄"
-   //% inlineInputMode=inline
-   export function Gamepad_Release(button: barb_fitting): boolean {
-       if(Get_Button_Status(button) == NONE_PRESS){
-           return true;
-       }
-       return false;
-   }
-
    /**
     * 双摇杆手柄
     */
@@ -201,30 +173,26 @@ namespace joystick {
     * 双摇杆手柄
     */
    //% blockId=Gamepad_shock block="Gamepad_shock Start of %shock vibration "  group="双摇杆手柄"
-   //% shock.min=0 shock.max=1000
-   //% weight=74
+   //% shock.min=0 shock.max=255
+   //% weight=75
    //% subcategory="双摇杆手柄"
    //% inlineInputMode=inline
     export function Gamepad_shock( shock: number): void {
         let a = AnalogPin.P1;
-        pins.analogWritePin( a , shock)
-    }
-
-
-    //% blockId=actuator_buzzer1 block="Vibration frequency of the on-board buzzer on the handle: %freq "   group="双摇杆手柄"
-    //% freq.min=0 freq.max=1000
-    //% weight=74
-    //% subcategory="双摇杆手柄"
-    export function actuator_buzzer1( freq: number): void {
-        let a = AnalogPin.P0;
-        pins.analogWritePin(a, freq)
+        pins.analogWritePin( a , pins.map(
+			shock,
+			0,
+			255,
+			0,
+			1023
+			))
     }
 
     /**
     * 双摇杆手柄
     */
    //% blockId=Gamepad_Wiggly block="Gamepad_Wiggly gain %rock rocker %axial price" group="双摇杆手柄"
-   //% weight=74
+   //% weight=76
    //% subcategory="双摇杆手柄"
    //% inlineInputMode=inline
    export function Gamepad_Wiggly(rock: Wiggly , axial: Shaft){
