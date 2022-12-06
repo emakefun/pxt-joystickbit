@@ -3,9 +3,9 @@ enum barb_fitting {
     JOYSTICK_BUTOON_LEFT_L = 0,
     //% block="RIGHT" 
     JOYSTICK_BUTOON_RIGHT_R = 1,
-    //% block="LEFTA"
+    //% block="JOYSTICK BUTTON LEFT"
     JOYSTICK_BUTTON_LEFT = 2,
-    //% block="RIGHTA" 
+    //% block="JOYSTICK BUTTON RIGHT" 
     JOYSTICK_BUTTON_RIGHT = 3,
 }
 
@@ -133,7 +133,7 @@ namespace joystick {
     let JOYSTICK_RIGHT_Y_REG = 0x13;
 
 
-    let BUTOON_LEFT_REG = 0x22;
+    let BUTOON_LEFT_REG = 0x24;
     let BUTOON_RIGHT_REG = 0x23;
     let JOYSTICK_BUTTON_RIGHT = 0x21;
     let JOYSTICK_BUTTON_LEFT = 0x20;
