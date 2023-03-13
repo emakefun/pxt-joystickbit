@@ -14,14 +14,14 @@ enum key_status {
     JOYSTICK_PRESS_DOWN = 0,   //按下
     //% block="UP"
     JOYSTICK_PRESS_UP = 1,    //释放
-    // //% block="CLICK1"
-    // SINGLE_CLICK = 3,     //单击
-    // //% block="CLICK2"
-    // DOUBLE_CLICK = 4,    //双击
-    // //% block="HOLD"
-    // LONG_PRESS_HOLD = 6,    //长按
-    // //% block="PRESS"
-    // NONE_PRESS = 8,      //未按
+    //% block="CLICK1"
+    SINGLE_CLICK = 3,     //单击
+    //% block="CLICK2"
+    DOUBLE_CLICK = 4,    //双击
+    //% block="HOLD"
+    LONG_PRESS_HOLD = 6,    //长按
+    //% block="PRESS"
+    NONE_PRESS = 8,      //未按
 }
 
 enum Shaft{
